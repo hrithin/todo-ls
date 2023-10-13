@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [todos, setTodos] = useState(() =>JSON.parse(localStorage.getItem("todos")))
+  const [todos, setTodos] = useState(() =>JSON.parse((localStorage.getItem("todos") ) )|| [])
   const [input, setInput] = useState("");
 
   useEffect(() => {
